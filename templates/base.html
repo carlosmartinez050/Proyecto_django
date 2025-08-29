@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link href="{% static 'fontawesome/css/all.min.css' %}" rel="stylesheet">
+   <title>{% block title %}S-ELECTRONIC{% endblock %}</title>
+</head>
+<body>
+    
+  <div class="container-float">
+    {% include "partials/header.html" %}
+  </div>
+ 
+</body>
+</html>
